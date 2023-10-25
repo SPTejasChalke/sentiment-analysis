@@ -3,10 +3,12 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 import joblib
+import pandas as pd
 
-# Sample data (replace this with your data)
-texts = ["This is a positive sentence.", "This is a negative sentence.", "This is a neutral sentence."]
-labels = [1, 0, 2]  # 1 for positive, 0 for negative, 2 for neutral
+data = pd.read_csv('output_file.csv')
+
+texts = data['review'].tolist()
+labels = data['sentiment'].tolist()
 
 # Text vectorization using TF-IDF
 vectorizer = TfidfVectorizer()
