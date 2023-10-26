@@ -14,6 +14,9 @@ labels = data['sentiment'].tolist()
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(texts)
 
+# Save the TF-IDF vectorizer
+joblib.dump(vectorizer, 'dtree_tfidf_vectorizer.pkl')
+
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.2, random_state=42)
 

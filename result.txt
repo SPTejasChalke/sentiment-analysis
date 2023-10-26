@@ -1,0 +1,6 @@
+model accuracy:
+    decision tree: 72.15%
+    svm: 90.72%
+time taken:
+    decision tree: 5-10 min
+    svm: 25-35 min
