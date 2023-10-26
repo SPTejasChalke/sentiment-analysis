@@ -1,6 +1,16 @@
 model accuracy:
-    decision tree: 72.15%
-    svm: 90.72%
+    decision tree:
+        Model Accuracy: 72.16%
+        F1 Score: 0.72
+        AUC Score: 0.72
+        Recall: 0.72
+        Precision: 0.72
+    svm:
+        Model Accuracy: 90.72%
+        F1 Score: 0.91
+        AUC Score: 0.91
+        Recall: 0.91
+        Precision: 0.91
 time taken:
     decision tree: 5-10 min
     svm: 25-35 min
