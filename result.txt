@@ -14,3 +14,5 @@ model accuracy:
 time taken:
     decision tree: 5-10 min
     svm: 25-35 min
+inaccurate statements:
+    "this looks nice"
